@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/pages.css" />
+    <link rel="stylesheet" href="../styles/login2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <img src="../assets/photos/logo.png" alt="aaa" />
+
+          <div class="nav-links">
+            <a href="../index.html">בית</a>
+            <a href="media.html">מדיה</a>
+            <a href="login.html">התחברות </a>
+              <a href="register.html"> הרשמה</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="login-container">
+          <h2>ברוך הבא</h2>
+          <p>אנא התחבר כדי להמשיך</p>
+          <form action="../index.html" >
+            <label for="email">מייל</label>
+            <input type="text" id="email" name="email" required  pattern="^[^@]+@[^@]+\.com$" title="Email must contain '@' and end with '.com'"/>
+
+            <label for="password">סיסמה</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="20" />
+
+            <button type="submit">
+              התחבר
+             
+            </button>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container1">
+          <div class="row">
+            <div class="footer-col">
+              <h4>חברה</h4>
+              <ul>
+              
+                <li><a href="about page.html">אודות</a></li>
+                <li><a href="personal page.html">פרופיל אישי</a></li>
+
+              </ul>
+
+            </div>
+            <div class="footer-col">
+              <h4>עזרה</h4>
+              <ul>
+                <li><a href="faq.html">שאלות תשובות </a></li>
+                <li>
+                  <a
+                    href="contact page.html"
+                    >צור קשר</a
+                  >
+                </li>
+                <li>
+                  <a href="register.html">טופס ההרשמה</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>עקבו אחרינו</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/holon.muni"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/holon.muni/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <div class="copyright">copyright C dor shaked and amit ron</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,232 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  background-color: #bdbdbd;
+}
+
+.container > header,
+.container > nav,
+.container > main,
+.container > footer {
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+}
+
+.nav-links a {
+  color: white;
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #444;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+footer > .container1 > .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #d8d8d8;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+}
+
+footer {
+  background-color: #333;
+}
+
+i {
+  font-size: 24px;
+  color: blue;
+}
+
+.copyright {
+  color: rgb(255, 255, 255);
+}
+
+.div-figure {
+  display: grid;
+  width: 100%;
+}
+
+.figure1 {
+  text-align: center;
+}
+
+.about-carnival {
+  width: 70%;
+}
+
+.gallery11 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px; /* הוספת רווח בין התמונות ל-footer */
+}
+
+.gallery11 img {
+  flex: 1 1 calc(33.333% - 30px); /* 3 תמונות בשורה עם רווחים */
+  max-width: calc(33.333% - 30px); /* 3 תמונות בשורה עם רווחים */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design עבור מסכים קטנים */
+@media (max-width: 768px) {
+  .gallery11 img {
+    flex: 1 1 calc(50% - 30px); /* 2 תמונות בשורה בטלפונים */
+    max-width: calc(50% - 30px); /* 2 תמונות בשורה בטלפונים */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery11 img {
+    flex: 1 1 100%; /* תמונה אחת בשורה במסכים קטנים מאוד */
+    max-width: 100%; /* תמונה אחת בשורה במסכים קטנים מאוד */
+  }
+}
+.ifram1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.video-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.video-text {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  max-width: 400px;
+}

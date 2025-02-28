@@ -1,0 +1,90 @@
+.user-deatails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-box {
+  flex: 1 1 calc(50% - 20px);
+  margin-bottom: 15px;
+}
+
+.input-box span.details {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-box textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.gender-details {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.gender-details h3.title-gender {
+  margin-bottom: 10px;
+}
+
+.gender-details label {
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+
+
+.button1{
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+ .button1:hover {
+  background-color: #555;
+}
+
+/* Adjust footer layout for smaller screens */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+}
+.button {
+   /* צבע רקע כחול */
+  color: white; /* צבע טקסט לבן */
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+ margin-bottom: 20px;
+ width: 100%;
+ text-align: center; 
+}

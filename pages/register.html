@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>register page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/pages.css" />
+    <link rel="stylesheet" href="../styles/register.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <img src="../assets/photos/logo.png" alt="aaa" />
+          <div class="nav-links">
+            <a href="../index.html">בית</a>
+            <a href="media.html">מדיה</a>
+            <a href="login.html">התחברות </a>
+            <a href="register.html"> הרשמה</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <form action="login.html">
+        <div>
+          <h1 class="h1S">טופס הרשמה</h1>
+        </div>
+        <div class="container">
+          
+            <div class="user-deatails">
+              <div class="input-box">
+                <span class="details">מייל</span>
+                <input
+                  type="email"
+                  id="email"
+                  name=" email"
+                  placeholder="הכנס מייל"
+                  required  pattern="^[^@]+@[^@]+\.com$" title="Email must contain '@' and end with '.com'"
+                  
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">אימות מייל</span>
+                <input
+                  type="email"
+                  id="confirm_mail"
+                  name="confirm_mail"
+                  placeholder="הכנס מייל זהה "
+                  required
+                  oninput="this.setCustomValidity(this.value !== document.getElementById('email').value ? 'Email do not match!' : '')"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">סיסמה</span>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="הכנס סיסמה"
+                  required minlength="8" maxlength="20"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">אימות סיסמה</span>
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="הכנס סיסמה זהה "
+                  required minlength="8" maxlength="20"
+                  oninput="this.setCustomValidity(this.value !== document.getElementById('password').value ? 'Passwords do not match!' : '')"
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">שם פרטי</span>
+                <input
+                  type="text"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="שם פרטי "
+                  required 
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">שם משפחה</span>
+                <input
+                  type="text"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="שם משפחה"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <span class="details">מספר פלאפון </span>
+                <input
+                  type="text"
+                  id="phone_number"
+                  name="phone_number"
+                  placeholder="הכנס מספר פלאפון "
+                  required minlength="10" maxlength="10"
+                />
+              </div>
+
+              <!-- gender area -->
+              <div class="gender-details" >
+                <h3 class="title-gender">מגדר</h3>
+                <label for="dot-1"> זכר </label>
+                <input type="radio" name="gender" id="dot-1" required/>
+                <label for="dot-2"> נקבה </label>
+                <input type="radio" name="gender" id="dot-2" />
+                <label for="dot-3"> מעדיף לא לציין </label>
+                <input type="radio" name="gender" id="dot-3"  />
+              </div>
+              <div class="button">
+               <button class="button1" type="submit">שליחה</button>          
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container1">
+          <div class="row">
+            <div class="footer-col">
+              <h4>חברה</h4>
+              <ul>
+                <li><a href="about page.html">אודות</a></li>
+                <li><a href="personal page.html">פרופיל אישי</a></li>
+
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>עזרה</h4>
+              <ul>
+                <li><a href="faq.html">שאלות תשובות </a></li>
+                <li>
+                  <a
+                    href="contact page.html"
+                    >צור קשר</a
+                  >
+                </li>
+                <li>
+                  <a href="register.html">טופס ההרשמה</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>עקבו אחרינו</h4>
+              <div class="social-links">
+                <a href="https://www.facebook.com/holon.muni"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://www.instagram.com/holon.muni/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <div class="copyright">copyright C dor shaked and amit ron</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

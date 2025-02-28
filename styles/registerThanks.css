@@ -1,0 +1,71 @@
+/* עיצוב כללי של הדף */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #0056b3; /* צבע רקע לכל העמוד */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ממקם את התוכן במרכז האנכי */
+  align-items: center; /* ממקם את התוכן במרכז האופקי */
+}
+
+/* כותרת תודה ממורכזת, פרוסה על כל רוחב הדף */
+.thank-you-message {
+  background-color: #007bff;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  border-bottom: 5px solid #0056b3; /* קו תחתון */
+}
+
+/* מיכל הכפתורים */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%; /* רווח גדול יותר בין הכפתורים */
+  margin-top: 200px;
+}
+
+/* עיצוב הכפתורים */
+.button {
+  text-decoration: none;
+  background-color: #28a745;
+
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* שינוי צבע הכפתור במעבר עכבר */
+.button:hover {
+  background-color: white;
+  color: #28a745;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 600px) {
+  .buttons-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button {
+    width: 80%;
+  }
+}

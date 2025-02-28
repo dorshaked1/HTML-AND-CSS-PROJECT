@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #bdbdbd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.thank-you-message {
+  background-color: #444;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 40px;
+  width: 80%;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 0;
+  border-bottom: 5px solid #555;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: white;
+  color: #333;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .buttons-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .button {
+    width: 80%;
+  }
+  .content-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
