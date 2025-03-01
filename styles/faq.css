@@ -8,6 +8,7 @@ main {
       body {
             direction: rtl;
             font-family: Arial, sans-serif;
+           background-color: #bdbdbd;
         }
         .accordion {
             width: 70%;
